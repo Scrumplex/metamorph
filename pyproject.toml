@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "metamorph"
+version = "0.1.0"
+description = ""
+authors = ["Sefa Eyeoglu <contact@scrumplex.net>"]
+license = "AGPL-3.0"
+readme = "README.md"
+
+[tool.poetry.scripts]
+metamorph = "metamorph.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+luigi = "^3.4.0"
+pydantic = "^2.4.2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
