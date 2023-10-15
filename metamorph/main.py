@@ -1,2 +1,5 @@
+from .quilt import QuiltLoaderTask
+
+
 def main():
-    pass
+    luigi.build([QuiltLoaderTask()])

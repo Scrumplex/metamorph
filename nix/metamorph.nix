@@ -2,6 +2,9 @@
   lib,
   buildPythonPackage,
   poetry-core,
+  luigi,
+  pydantic,
+  requests,
   self,
 }:
 buildPythonPackage {
@@ -12,6 +15,12 @@ buildPythonPackage {
 
   nativeBuildInputs = [
     poetry-core
+  ];
+
+  propagatedBuildInputs = [
+    luigi
+    pydantic
+    requests
   ];
 
   pythonImportsCheck = ["metamorph"];

@@ -13,6 +13,7 @@ metamorph = "metamorph.main:main"
 python = "^3.10"
 luigi = "^3.4.0"
 pydantic = "^2.4.2"
+requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.3.2"
